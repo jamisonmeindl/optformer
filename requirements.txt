@@ -3,7 +3,19 @@ t5
 seqio
 
 # OSS Vizier
-google-vizier
+google-vizier[all]
+
+dm-reverb[tensorflow]
+ordered-set
+grpcio-tools
+protobuf
+linear-operator
+gpytorch
+torchvision
+botorch
+tf-keras
+git+https://github.com/google-research/t5x.git
+
 
 # For the notebook
 matplotlib
@@ -11,9 +23,11 @@ matplotlib
 # Autodiff and numerical packages.
 numpy>=1.21.5
 tensorflow>=2.9.1
-jax  # Use latest version for t5x.
+jax<0.4.34  # Use latest version for t5x.
 jaxlib  # Use latest version for t5x.
 flax  # Use latest version for t5x.
+jaxtyping
+equinox>=0.10.12
 
 # Standard packages.
 typing  # Version dependent on Python version.
