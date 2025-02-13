@@ -694,7 +694,7 @@ class InferenceModel(object):
       self,
       params: train_state_lib.FrozenVariableDict,
       batch: Batch,
-      rng: jax.random.KeyArray,
+      rng: jax.Array,
       decode_until: Optional[int] = None,
       decoder_params: Optional[MutableMapping[str, Any]] = None,
       num_decodes: int = 1) -> Tuple[jnp.ndarray, Batch]:

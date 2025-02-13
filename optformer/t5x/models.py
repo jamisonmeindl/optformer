@@ -108,7 +108,7 @@ class VizierEncoderDecoderModel(models.EncoderDecoderModel):
       self,
       params: PyTree,
       batch: Mapping[str, jnp.ndarray],
-      dropout_rng: Optional[jax.random.KeyArray],
+      dropout_rng: Optional[jax.Array],
       label_smoothing: Optional[float] = None,
       z_loss: Optional[float] = None,
       loss_normalizing_factor: Union[
@@ -128,7 +128,7 @@ class VizierEncoderDecoderModel(models.EncoderDecoderModel):
       self,
       params: PyTree,
       batch: Mapping[str, jnp.ndarray],
-      rng: Optional[jax.random.KeyArray] = None,
+      rng: Optional[jax.Array] = None,
       decoder_params: Optional[MutableMapping[str, Any]] = None,
       return_all_decodes: bool = False,
       num_decodes: int = 1,

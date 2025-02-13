@@ -1,6 +1,8 @@
 # T5X prerequisite.
+t5x @ git+https://github.com/google-research/t5x.git@main#egg=t5x
 t5
 seqio==0.0.13
+optax==0.2.4
 
 # OSS Vizier
 google-vizier==0.0.20
@@ -14,9 +16,9 @@ matplotlib
 # Autodiff and numerical packages.
 numpy>=1.21.5
 tensorflow>=2.9.1
-jax  # Use latest version for t5x.
-jaxlib  # Use latest version for t5x.
-flax  # Use latest version for t5x.
+jax==0.4.28  # Use latest version for t5x.
+jaxlib==0.4.28  # Use latest version for t5x.
+flax==0.10.3  # Use latest version for t5x.
 
 # Standard packages.
 typing  # Version dependent on Python version.
